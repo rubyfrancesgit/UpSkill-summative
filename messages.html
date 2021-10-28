@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>UpSkill</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav__logo-div">
+                    <h1 class="top-nav__h1"><a class="top-nav__a a-tag" href="./index.html">UpSkill</a></h1>
+                </div>
+                <div class="top-nav__right-div">
+                    <ul class="top-nav__ul">
+                        <li class="top-nav__li"><a class="top-nav__a" href="./index.html">Home</a></li>
+                        <li class="top-nav__li"><a class="top-nav__a" href="./about.html">About</a></li>
+                    </ul>
+                    <img class="top-nav__profile-selection" id="profile-selection" src="./images/profile-nav.png" alt="profile selection">
+                </div>
+            </nav>
+        </header>
+
+        <section class="drop-down" id="drop-down">
+            <div class="drop-down-menu">
+                <div class="drop-down-menu__top">
+                    <ul class="drop-down-menu__ul">
+                        <li class="drop-down-menu__li"><a href="./messages.html">Messages</a></li>
+                        <li class="drop-down-menu__li">Bookings</li>
+                        <li class="drop-down-menu__li">Watchlist</li>
+                    </ul>
+                </div>
+                <div class="drop-down-menu__bottom">
+                    <ul class="drop-down-menu__ul">
+                        <li class="drop-down-menu__li"><a href="profile.html">Account</a></li>
+                        <li class="drop-down-menu__li">Log out</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="search-bar">
+            <div class="search-bar__div">
+                <form action="" class="search-bar__form search-bar__form-1">
+                    <input class="search-bar__input" type="text" id="location-form" name="location-form" value="Location">
+                </form>
+                <form action="" class="search-bar__form  search-bar__form-2">
+                    <input class="search-bar__input search-bar__input-2" type="text" id="interest-form" name="interest-form" value="Interest">
+                </form>
+                <img class="search-bar__img" src="./images/search.svg" alt="search icon">
+            </div>
+        </section>
+
+        <section class="messages">
+            <div class="messages__container">
+                <div class="messages__left">
+                    <div class="messages__inbox messages__inbox-1">
+                        <img class="messages__inbox-img" src="./images/portraitguy1.jpg" alt="portrait of guy smiling">
+                        <div class="messages__inbox-div">
+                            <h3 class="messages__h3">Guy</h3>
+                            <p class="messages__p">Hi there, just checki...</p>
+                        </div>
+                    </div>
+                    <div class="messages__inbox">
+                        <img class="messages__inbox-img" src="./images/portraitguy2.jpg" alt="guy smiling in the forrest">
+                        <div class="messages__inbox-div">
+                            <h3 class="messages__h3">Alex</h3>
+                            <p class="messages__p">Hi there, just checki...</p>
+                        </div>
+                    </div>
+                    <div class="messages__inbox">
+                        <img class="messages__inbox-img" src="./images/portraitgirl1.jpg" alt="portrait of woman">
+                        <div class="messages__inbox-div">
+                            <h3 class="messages__h3">Sandra</h3>
+                            <p class="messages__p">Hey! Do I need to br...</p>
+                        </div>
+                    </div>
+                    <div class="messages__inbox">
+                        <img class="messages__inbox-img" src="./images/portraitgirl2.jpg" alt="portrait of woman smiling">
+                        <div class="messages__inbox-div">
+                            <h3 class="messages__h3">Heather</h3>
+                            <p class="messages__p">Should I bring anyth...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages__right">
+                    <div class="messages__chat-title">
+                        <h2 class="messages__h2">Guy</h2>
+                    </div>
+                    <div class="messages__chat">
+                        <div class="messages__div">
+                            <img class="messages__chat-img" src="./images/portraitguy1.jpg" alt="portrait of guy smiling">
+                            <div class="messages__chat-text">
+                                <h3 class="messages__h3">Guy</h3>
+                                <p class="messages__p">Hi there, just checking if there’s anything I need to bring along? </p>
+                            </div>
+                        </div>
+                        <form action="" class="messages__form">
+                            <input class="messages__input" type="text" id="messages__form" name="messages__form" value="Type message...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+                <ul class="footer__ul">
+                    <li class="footer__li">About</li>
+                    <li class="footer__li">Contact</li>
+                </ul>
+            <div class="footer__div-2">
+                <div class="footer__logo-div">
+                    <h2 class="footer__h2">UpSkill</h2>
+                </div>
+                <p class="footer__p">Copyright @ 2021 UpSkill, Inc</p>
+            </div>
+            <div class="footer__div-3">
+                <img class="footer__img" src="./images/Twitter.png" alt="Twitter icon">
+                <img class="footer__img footer__img2" src="./images/Facebook.png" alt="Facebook icon">
+                <img class="footer__img" src="./images/Instagram.png" alt="Instagram icon">
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>

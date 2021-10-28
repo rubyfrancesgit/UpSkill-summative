@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>UpSkill</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav__logo-div">
+                    <h1 class="top-nav__h1"><a class="top-nav__a a-tag" href="./index.html">UpSkill</a></h1>
+                </div>
+                <div class="top-nav__right-div">
+                    <ul class="top-nav__ul">
+                        <li class="top-nav__li"><a class="top-nav__a" href="./index.html">Home</a></li>
+                        <li class="top-nav__li"><a class="top-nav__a" href="./about.html">About</a></li>
+                    </ul>
+                    <img class="top-nav__profile-selection" id="profile-selection" src="./images/profile-nav.png" alt="profile selection">
+                </div>
+            </nav>
+        </header>
+
+        <section class="drop-down" id="drop-down">
+            <div class="drop-down-menu">
+                <div class="drop-down-menu__top">
+                    <ul class="drop-down-menu__ul">
+                        <li class="drop-down-menu__li"><a href="./messages.html">Messages</a></li>
+                        <li class="drop-down-menu__li">Bookings</li>
+                        <li class="drop-down-menu__li">Watchlist</li>
+                    </ul>
+                </div>
+                <div class="drop-down-menu__bottom">
+                    <ul class="drop-down-menu__ul">
+                        <li class="drop-down-menu__li"><a href="profile.html">Account</a></li>
+                        <li class="drop-down-menu__li">Log out</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="search-bar">
+            <div class="search-bar__div">
+                <form action="" class="search-bar__form search-bar__form-1">
+                    <input class="search-bar__input" type="text" id="location-form" name="location-form" value="Location">
+                </form>
+                <form action="" class="search-bar__form  search-bar__form-2">
+                    <input class="search-bar__input search-bar__input-2" type="text" id="interest-form" name="interest-form" value="Interest">
+                </form>
+                <img class="search-bar__img" src="./images/search.svg" alt="search icon">
+            </div>
+        </section>
+
+        <section class="lesson-title">
+            <div class="lesson-title__div">
+                <h2 class="lesson-title__h2">Guitar lessons</h2>
+                <div class="lesson-title__location-div">
+                    <img class="lesson-title__location-icon" src="./images/location.svg" alt="location icon">
+                    <p  class="lesson-title__p">Wellington</p>
+                </div>
+            </div>
+            <img  class="lesson-title__bookmark" id="bookmark" src="./images/bookmark.svg" alt="hollow bookmark icon">
+        </section>
+
+        <section class="images">
+            <img class="images__left" src="./images/guitarguys.jpg" alt="two guys playing guitar">
+            <div class="images__right">
+                <img class="images__right-1" src="./images/guitar.jpg" alt="someone playing guitar">
+                <img class="images__right-2" src="./images/sheet-music.jpg" alt="sheet music">
+                <img class="images__right-3" src="./images/sunset.jpg" alt="two people playing guitar against a golden sunset">
+            </div>
+        </section>
+
+        <section class="lesson-info">
+            <div class="lesson-info__left">
+                <div class="lesson-info__hosted-by">
+                    <a class="a-tag" href="./profile.html"><img class="lesson-info__img" src="./images/portraitguy1.jpg" alt="profile picture of smiling man"></a>
+                    <p class="lesson-info__h2">Hosted by Guy Smith</p>
+                </div>
+                <div class="lesson-info__lesson-plan">
+                    <h2 class="lesson-info__h2">Lesson plan</h2>
+                    <p class="lesson-info__p">We'll catch up for a one hour guitar lesson. Before the lesson we'll get in contact about what you already know about playing guitar at so I can tailer the lesson to you.</p>
+                </div>
+                <div class="lesson-info__lesson-plan">
+                    <h2 class="lesson-info__h2">What's included</h2>
+                    <p class="lesson-info__p">I have two guitars so I can supply you with one, but you're also welcome to bring your own guitar if you have one! Sheet music is provided, and I'll bring pens for annotation.</p>
+                </div>
+            </div>
+
+            <div class="lesson-info__booking">
+                <div class="lesson-info__div">
+                    <div class="lesson-info__price-div">
+                        <p class="lesson-info__p1">$50</p>
+                        <p class="lesson-info__p2">/ person</p>
+                    </div>
+                    <form class="lesson-info__form" action="">
+                        <input class="lesson-info__form-1" type="date" id="Lesson-info__dates" name="Lesson-info__dates" value="Dates">
+                        <select class="lesson-info__form-2" name="lesson-info__guests" id="lesson-info__guests" value="Guests">
+                            <option value="0">   </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </form>
+                    <button class="lesson-info__btn">Request Booking</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-title">
+            <h2 class="reviews-title__h2">Reviews</h2>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__left">
+                <div class="reviews__profile-section">
+                    <img class="reviews__img" src="./images/portraitgirl1.jpg" alt="portrait photo of smiling girl">
+                    <div class="reviews__name-section">
+                        <h3 class="reviews__h3">Sandra</h3>
+                        <p class="reviews__p-1">Feb 2021</p>
+                    </div>
+                </div>
+                <p class="reviews__p">Great lesson! Guy is really prepared and took the time to plan the lesson according to my experience. Will be booking again soon.</p>
+            </div>
+
+            <div class="reviews__left">
+                <div class="reviews__profile-section">
+                    <img class="reviews__img" src="./images/portraitguy2.jpg" alt="guy smiling in forrest">
+                    <div class="reviews__name-section">
+                        <h3 class="reviews__h3">Alex</h3>
+                        <p class="reviews__p-1">Jan 2021</p>
+                    </div>
+                </div>
+
+                <p class="reviews__p">Would definitely reccomend this for anyone keen to get into guitar. I had no experience before this lesson, and now I'm starting to build my confidence strumming away. Cheers guy.</p>
+            </div>
+        </section>
+
+        <section class="about-info">
+            <div class="about-info__left">
+                <div class="about-info__profile">
+                    <a class="a-tag" href="./profile.html"><img class="about-info__img" src="./images/portraitguy1.jpg" alt="profile picture of smiling man"></a>
+                    <div class="about-info__name-div">
+                        <h2 class="about-info__h2">Get to know Guy Smith</h2>
+                        <a class="a-tag" href="./messages.html"><button class="about-info__btn">Contact</button></a>
+                    </div>
+                </div>
+                <p class="about-info__p">Hi! My name's Guy. I'm a Welly local. Been playing guitar pretty much my whole life, with a particular focus on popular music/songs to sing along with. I'd love to share this experience and help people learn to play guitar.</p>
+            </div>
+            <div class="about-info__right">
+                <iframe  class="about-info__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.793658830529!2d174.81092451510713!3d-41.31335224999713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38af9d142ccdb3%3A0xb11397c0cf44e216!2s21%20Maupuia%20Road%2C%20Miramar%2C%20Wellington%206022!5e0!3m2!1sen!2snz!4v1631850318645!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+                <ul class="footer__ul">
+                    <li class="footer__li">About</li>
+                    <li class="footer__li">Contact</li>
+                </ul>
+            <div class="footer__div-2">
+                <div class="footer__logo-div">
+                    <h2 class="footer__h2">UpSkill</h2>
+                </div>
+                <p class="footer__p">Copyright @ 2021 UpSkill, Inc</p>
+            </div>
+            <div class="footer__div-3">
+                <img class="footer__img" src="./images/Twitter.png" alt="Twitter icon">
+                <img class="footer__img footer__img2" src="./images/Facebook.png" alt="Facebook icon">
+                <img class="footer__img" src="./images/Instagram.png" alt="Instagram icon">
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>UpSkill</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav__logo-div">
+                    <h1 class="top-nav__h1"><a class="top-nav__a a-tag" href="./index.html">UpSkill</a></h1>
+                </div>
+                <div class="top-nav__right-div">
+                    <ul class="top-nav__ul">
+                        <li class="top-nav__li"><a class="top-nav__a" href="./index.html">Home</a></li>
+                        <li class="top-nav__li"><a class="top-nav__a" href="./about.html">About</a></li>
+                    </ul>
+                    <img class="top-nav__profile-selection" id="profile-selection" src="./images/profile-nav.png" alt="profile selection">
+                </div>
+            </nav>
+        </header>
+
+        <section class="drop-down" id="drop-down">
+            <div class="drop-down-menu">
+                <div class="drop-down-menu__top">
+                    <ul class="drop-down-menu__ul">
+                        <li class="drop-down-menu__li"><a href="./messages.html">Messages</a></li>
+                        <li class="drop-down-menu__li">Bookings</li>
+                        <li class="drop-down-menu__li">Watchlist</li>
+                    </ul>
+                </div>
+                <div class="drop-down-menu__bottom">
+                    <ul class="drop-down-menu__ul">
+                        <li class="drop-down-menu__li"><a href="profile.html">Account</a></li>
+                        <li class="drop-down-menu__li">Log out</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="search-bar">
+            <div class="search-bar__div">
+                <form action="" class="search-bar__form search-bar__form-1">
+                    <input class="search-bar__input" type="text" id="location-form" name="location-form" value="Location">
+                </form>
+                <form action="" class="search-bar__form  search-bar__form-2">
+                    <input class="search-bar__input search-bar__input-2" type="text" id="interest-form" name="interest-form" value="Interest">
+                </form>
+                <img class="search-bar__img" src="./images/search.svg" alt="search icon">
+            </div>
+        </section>
+
+        <section class="landing-section">
+            <div class="landing-section__left">
+                <div class="landing-section__text">
+                    <h2 class="landing-section__h2">Learn the skills of your wildest dreams!</h2>
+                    <p class="landing-section__p">UpSkill connects you with the tools & talent to grow your skills in the areas you’re interested in. Start learning new skills today – hands on, in person.</p>
+                    <button  class="landing-section__btn"><a class="a-tag" href="./explore-nearby.html">Explore nearby</a></button>
+                </div>
+            </div>
+            <div class="landing-section__right">
+                <img class="landing-section__img" src="./images/earthgarden.jpg" alt="graphic illustration of two people tending a garden on top of the earth">
+            </div>
+        </section>
+
+
+        <section class="steps">
+                <h2 class="steps__title">How Upskill works</h2>
+            <div class="steps__div-row">
+                <div class="steps__div">
+                    <img class="steps__img" src="./images/step-one.png" alt="visual demonstration of searching">
+                    <div class="steps__text">
+                        <h3 class="steps__h3">Step One</h3>
+                        <p class="steps__p">Start by exploring Skills or Volunteer experiences nearby. Apply filters like painting, chess, or conservation to find your fit. Save your favourites to a watchlist for later.</p>
+                    </div>
+                </div>
+                <div class="steps__div">
+                    <img class="steps__img" src="./images/step-two.png" alt="visual demonstration of request booking">
+                    <div class="steps__text">
+                        <h3 class="steps__h3">Step Two</h3>
+                        <p class="steps__p">Once you’ve found what you’re looking for, book in for a session. Make sure you’ve checked out your hosts bio, read the reviews, rules, and details on cancellation.</p>
+                    </div>
+                </div>
+                <div class="steps__div">
+                    <img class="steps__img" src="./images/step-three.png" alt="visual demonstration of messaging host">
+                    <div class="steps__text">
+                        <h3 class="steps__h3">Step Three</h3>
+                        <p class="steps__p">It’s grow time! Connect with your host for pre-session tips & questions. Contact the UpSkill team for any additional support – we’re here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-aos="fade-up">
+            <section class="volunteer-hobby">
+                <div class="volunteer-hobby__left">
+                    <img class="volunteer-hobby__img" src="./images/cookingpair.jpg" alt="two people cooking">
+                    <h2 class="volunteer-hobby__h2">Learn a new skill</h2>
+                    <button class="volunteer-hobby__btn"><a class="a-tag" href="./explore-nearby.html">Explore Nearby</a></button>
+                </div>
+                <div class="volunteer-hobby__right">
+                    <img class="volunteer-hobby__img" src="./images/gardenparent.jpg" alt="man and boy gardening">
+                    <h2 class="volunteer-hobby__h2">Volunteer</h2>
+                    <button class="volunteer-hobby__btn"><a class="a-tag" href="./explore-nearby.html">Explore Nearby<a href="./explore-nearby.html"></a></button>
+                </div>
+            </section>
+        </div>
+
+        <section class="values">
+            <div class="values-div values__div">
+                <img class="values__img" src="./images/community.svg" alt="two person community icon">
+                <h2 class="values__h2">Community</h2>
+                <p class="values__p">Create a platform for people to share, learn, and grow together</p>
+            </div>
+            <div class="values-div values__div">
+                <img class="values__img" src="./images/accessibility.svg" alt="icon of a hand">
+                <h2 class="values__h2">Accessibility</h2>
+                <p class="values__p">Lower the barrier to entry to learn new skills</p>
+            </div>
+            <div class="values-div values__div">
+                <img class="values__img2" src="./images/world.svg" alt="world icon">
+                <h2 class="values__h2">Eco-conscious</h2>
+                <p class="values__p">Help lower over-consumption by accessing the share-economy</p>
+            </div>
+            <div class="values-div values__div">
+                <img class="values__img2" src="./images/loop-heart.svg" alt="logo, heart with loop and arrow">
+                <h2 class="values__h2">Giving Back</h2>
+                <p class="values__p">Connecting organisations and people to help the community</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+                <ul class="footer__ul">
+                    <li class="footer__li">About</li>
+                    <li class="footer__li">Contact</li>
+                </ul>
+            <div class="footer__div-2">
+                <div class="footer__logo-div">
+                    <h2 class="footer__h2">UpSkill</h2>
+                </div>
+                <p class="footer__p">Copyright @ 2021 UpSkill, Inc</p>
+            </div>
+            <div class="footer__div-3">
+                <img class="footer__img" src="./images/Twitter.png" alt="Twitter icon">
+                <img class="footer__img footer__img2" src="./images/Facebook.png" alt="Facebook icon">
+                <img class="footer__img" src="./images/Instagram.png" alt="Instagram icon">
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>

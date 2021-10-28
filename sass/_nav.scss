@@ -1,0 +1,66 @@
+.top-nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px grey;
+
+    &__logo-div{
+        @include center;
+        height: 100%;
+    }
+
+    &__right-div{
+        @include center;
+        height: 100%;
+    }
+
+    &__h1{
+        color: $blue;
+        font-size: 3rem;
+        font-family: $text-font;
+        letter-spacing: 0.1rem;
+        margin-left: 3rem;
+    }
+
+    &__ul{
+        display: flex;
+        list-style: none;
+        @include text;
+    }
+
+    &__li{
+        padding: 1rem;
+        font-size: 2rem;
+        color: $grey;
+    }
+
+    &__profile-selection{
+        height: 55%;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 3rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .top-nav{
+        &__h2{
+            font-size: 2rem;
+        }
+
+        &__logo{
+            height: 50%;
+            padding-left: 1.5rem;
+            padding-right: 1rem;
+        }
+
+        &__li{
+            font-size: 1.5rem;
+            padding: .5rem;
+        }
+    }
+}

@@ -1,0 +1,347 @@
+.search-bar{
+    width: 100vw;
+    height: 8vh;
+    @include center;
+
+    &__img{
+        height: 80%;
+        width: auto;
+    }
+}
+
+.landing-section{
+    width: 100vw;
+    height: 70vh;
+    @include center;
+
+    &__left{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__right{
+        width: 45%;
+        height: 100%;
+        @include center;
+    }
+
+    &__text{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 5rem
+    }
+
+    &__h2{
+        @include heading;
+    }
+
+    &__p{
+        @include text;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__btn{
+        @include button;
+    }
+
+    &__img{
+        width: 80%;
+        height: auto;
+        @include center;
+        background-image: url(../images/earthgarden.jpg);
+        background-size: cover;
+    }
+}
+
+.steps{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    &__title{
+        @include heading;
+        width: 100%;
+        height: 10%;
+        @include center;
+        padding-top: 2rem;
+    }
+
+    &__div-row{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__div{
+        width: 25%;
+        @include center;
+        flex-direction: column;
+    }
+
+    &__text{
+        @include center;
+        flex-direction: column;
+    }
+
+    &__h3{
+        @include small-heading;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__p{
+        @include text;
+    }
+}
+
+.volunteer-hobby{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &__left{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__right{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+        width: 70%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    &__h2{
+        @include small-heading;
+        font-weight: bold;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__btn{
+        width: 35%;
+        @include button;
+    }
+}
+
+.values{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__div{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        @include center;
+    }
+
+    &__img{
+        height: 10rem;
+        width: 100%;
+        @include center;
+    }
+
+    &__img2{
+        height: 8rem;
+        width: 100%;
+        @include center;
+    }
+
+    &__h2{
+        height: 25%;
+        @include small-heading;
+        @include center;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__p{
+        height: 25%;
+        width: 80%;
+        @include text;
+        @include center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .landing-section{
+        height: 50vh;
+
+        &__left{
+            width: 50%;
+        }
+
+        &__right{
+            width: 50%;
+        }
+
+        &__text{
+            width: 95%;
+        }
+
+        &__h2{
+            font-size: 2rem;
+        }
+
+        &__p{
+            font-size: 1.2rem;
+        }
+
+        &__btn{
+            font-size: 1.2rem;
+        }
+    }
+
+    .steps{
+        height: 195vh;
+        flex-wrap: wrap;
+
+        &__title{
+            height: 7%;
+            padding-top: 0;
+        }
+
+        &__div-row{
+            flex-wrap: wrap;
+        }
+
+        &__div{
+            width: 100%;
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__h2{
+            font-size: 2rem;
+        }
+
+        &__h3{
+            font-size: 1.5rem;
+        }
+
+        &__p{
+            width: 40ch;
+            font-size: 1.2rem;
+        }
+
+        &__img{
+            width: 40%;
+        }
+    }
+
+    .volunteer-hobby{
+        height: 50vh;
+        justify-content: center;
+
+        &__left{
+            width: 50%;
+        }
+
+        &__right{
+            width: 50%;
+        }
+
+        &__btn{
+            width: 13rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .values{
+        height: 75vh;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__div{
+            width: 50%;
+            height: 35%;
+        }
+
+        &__img{
+            height: 6rem;
+        }
+
+        &__img2{
+            height: 4rem;
+        }
+
+        &__h2{
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 1.5rem;
+        }
+
+        &__p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .landing-section{
+        &__h2{
+            font-size: 2rem;
+        }
+
+        &__p{
+            width: 30ch;
+        }
+    }
+
+    .steps{
+        height: 80vh;
+
+        &__img{
+            width: 90%;
+        }
+    }
+
+    .volunteer-hobby{
+
+        &__btn{
+            width: 50%;
+        }
+    }
+
+    .values{
+        align-items: flex-start;
+    }
+}

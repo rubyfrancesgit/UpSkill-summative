@@ -1,0 +1,128 @@
+.wellington{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__h2{
+        @include heading;
+        padding-left: 5rem;
+    }
+}
+
+.filters{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    &__div-1{
+        display: flex;
+    }
+
+    &__btn{
+        height: 3rem;
+        @include button-white;
+        background: #fff;
+        width: 12rem;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    &__div-2{
+        height: 3rem;
+        width: 12rem;
+        @include button-white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__img{
+        width: 1.3rem;
+    }
+}
+
+.lessons{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &__div{
+        width: 25%;
+        height: 45%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &__img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &__h2{
+        @include text;
+        font-weight: bold;
+    }
+
+    &__p{
+        @include text;
+        color: $dark-grey;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .wellington{
+        &__h2{
+            padding-left: 3.5rem;
+        }
+    }
+    .filters{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+
+        &__btn{
+            width: 8rem;
+            margin-right: 1;
+        }
+
+        &__div-2{
+            width: 8rem;
+        }
+    }
+
+    .lessons{
+        height: 155vh;
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        
+        &__div{
+            width: 50%;
+            height: 20%;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .lessons{
+        height: 125vh;
+        justify-content: flex-start;
+        
+        &__div{
+            width: 33%;
+            height: 30%;
+        }
+    }
+}

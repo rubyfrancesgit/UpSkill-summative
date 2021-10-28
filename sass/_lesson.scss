@@ -1,0 +1,502 @@
+.lesson-title{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    &__h2{
+        @include heading;
+    }
+
+    &__location-div{
+        display: flex;
+    }
+
+    &__location-icon{
+        width: 1.1rem;
+        height: auto;
+        object-fit: cover;
+        margin-right: 1rem;
+        margin-left: .1rem;
+    }
+
+    &__p{
+        @include text;
+        color: $dark-grey;
+    }
+
+    &__bookmark{
+        width: 2rem;
+        padding-top: 1rem;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+.images{
+    width: 100vw;
+    height: 60vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    @include center;
+    
+    &__left{
+        width: 70%;
+        height: 95%;
+        padding-right: 1rem;
+        object-fit: cover;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    &__right{
+        width: 30%;
+        height: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    &__right-1{
+        width: 100%;
+        height: 33.3%;
+        padding-bottom: .5rem;
+        object-fit: cover;
+        border-radius: 0px 5px 0px 0px;
+    }
+
+    &__right-2{
+        width: 100%;
+        height: 33.3%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        object-fit: cover;
+    }
+
+    &__right-3{
+        width: 100%;
+        height: 33.3%;
+        padding-top: .5rem;
+        object-fit: cover;
+        border-radius: 0px 0px 5px 0px;
+    }
+}
+
+.lesson-info{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    &__left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__hosted-by{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__img{
+        width: 4rem;
+        object-fit: cover;
+        border-radius: 180px;
+        margin-right: 1rem
+    }
+
+    &__h2{
+        @include heading;
+        font-size: 2rem;
+    }
+
+    &__lesson-plan{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__p{
+        @include text;
+        padding-top: 1rem;
+    }
+
+    &__booking{
+        width: 30%;
+        height: 80%;
+        @include center;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+    }
+
+    &__div{
+        width: 100%;
+        height: 70%;
+        @include center;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    &__price-div{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &__form-1{
+        margin-bottom: .5rem;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+        @include text;
+    }
+
+    &__form-2{
+        margin-top: .5rem;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+        @include text;
+    }
+
+    &__p1{
+        @include heading;
+    }
+
+    &__p2{
+        @include heading;
+        font-weight: lighter;
+    }
+
+    &__btn{
+        @include button;
+    }
+}
+
+.reviews-title{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10rem;
+
+    &__h2{
+        @include heading;
+        font-size: 2rem;
+    }
+}
+
+.reviews{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    &__left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__profile-section{
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+
+    &__img{
+        object-fit: cover;
+        border-radius: 180px;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    &__h3{
+        @include text;
+        font-weight: bold;
+    }
+
+    &__p-1{
+        @include text;
+        color: $dark-grey;
+    }
+
+    &__p{
+        @include text;
+    }
+}
+
+.about-info{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 3rem;
+
+    &__left{
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+
+    &__profile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    &__img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 180px;
+        margin-right: 1rem
+    }
+
+    &__h2{
+        @include heading;
+        font-size: 2rem;
+    }
+
+    &__btn{
+        @include button-white;
+        border: 1px solid $light-grey;
+        width: 10rem;
+        height: 2rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    &__p{
+        @include text;
+        margin-top: 1.5rem
+    }
+
+    &__right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__map{
+        width: 90%;
+        height: 90%;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .lesson-title{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        &__h2{
+            font-size: 2rem;
+        }
+
+        &__p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .images{
+        height: 30vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border-radius: 5px;
+
+        &__left{
+            width: 100%;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        &__right{
+            display: none;
+        }
+    }
+
+    .lesson-info{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 1.5;
+
+        &__left{
+            width: 100%;
+        }
+
+        &__booking{
+            width: 100vw;
+            height: 10vh;
+            background: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: 1.5;
+        }
+
+        &__form{
+            width: 10rem;
+        }
+
+        &__form-1{
+            margin-bottom: .2rem;
+        }
+
+        &__form-2{
+            margin-top: .2rem;
+        }
+
+        &__div{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        &__p{
+            font-size: 1.5rem;
+        }
+
+        &__p1{
+            font-size: 1.5rem;
+        }
+
+        &__p2{
+            font-size: 1.5rem;
+        }
+
+        &__btn{
+            font-size: 1.5rem;
+        }
+    }
+
+    .reviews-title{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .reviews{
+        height: 50vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        flex-wrap: wrap;
+
+        &__left{
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    .about-info{
+        width: 100vw;
+        height: 80vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        flex-wrap: wrap;
+
+        &__left{
+            width: 100%;
+            height: 50%;
+        }
+
+        &__right{
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .lesson-title{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .images{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .lesson-info{
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        &__left{
+            width: 55%;
+        }
+
+        &__booking{
+            width: 40%;
+        }
+    }
+
+    .reviews-title{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .reviews{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .about-info{
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        &__p{
+            padding-right: 2rem;
+        }
+    }
+}
